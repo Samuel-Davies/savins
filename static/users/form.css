@@ -1,0 +1,111 @@
+body{
+    background-color: #EFF0F5;
+}
+.form-container {
+    width: 400px;
+    margin: 60px auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form-container h1 {
+    font-size: 24px;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.message {
+    font-size: 18px;
+    color: #f04431;
+    padding: 10px 0;
+    margin: 10px 0;
+    border: 2px solid #f04431;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+label {
+    color: #555;
+    display: block;
+    margin: 5px 0;    
+    font-size: 16px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=number],
+input[type=email],
+input[type=password] {
+    background-color: #F0F5F9;
+    width: 100%;
+    height: 35px;
+    border: none;
+    align-self: center;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+    border: 1px solid #f04431;
+    outline: none;
+}
+
+input[type=submit] {
+    width: 50%;
+    margin: 20px;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #f04431;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    background-color: #FFFFFF;
+    color: #f04431;
+    outline-color: #f04431;
+    outline-style: solid;
+    outline-width: 5px;
+}
+
+.alt-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.alt-link a {
+    text-decoration: none;
+    color: #f04431;
+}

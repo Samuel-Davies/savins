@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'users/form.css'%}">
+</head>
+<body>
+    <div class="form-container">
+
+        <h1>Create an Account</h1>
+        
+            <div class="message">wow</div>
+        <form action="" method="post">
+            {% csrf_token%}
+
+            <div><label>First Name:</label> <input type="text" name="first_name" required></div>
+            <div><label>Last Name:</label> <input type="text" name="last_name" required></div>
+            <div><label>Username:</label> <input type="text" name="username" required></div>
+            <div><label>Telephone:</label> <input type="tel" name="telephone" required maxlength="10"></div>
+            <div><label>Email:</label> <input type="email" name="email" required></div>
+            <div><label>Password:</label> <input type="password" name="password1" required></div>
+            <div><label>Confirm Password:</label> <input type="password" name="password2" required></div>
+
+            <div><input type="submit" value="Register"></div>
+            
+        </form>
+
+        <div class="alt-link"> Already have an Account? <a href="">Login</a> </div>
+
+    </div>
+</body>
+</html>
