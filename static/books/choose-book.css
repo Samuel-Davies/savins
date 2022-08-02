@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background-color: #EFF0F5;
+    font-family: sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background-color: #f04431;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 5px 20px;
+}
+
+.header h1 {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin: 5px 0px;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+h3 {
+    margin: 0 30px;
+    color: #FFFFFF;
+}
+
+.head-btn {
+    text-decoration: none;
+    color: #f04431;
+    padding: 7px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+}
+
+.head-btn:hover {
+    background-color: #f04431;
+    color: #FFFFFF;
+    outline-color: #FFFFFF;
+    outline-style: solid;
+    outline-width: 3px;
+}
+
+/* Homepage section */
+.balance-display {
+    margin: 5px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.details-container h2 {
+    margin: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+} 
+
+.details-container{
+    background-color: #FFFFFF;
+    width: 600px;
+    margin: 10px auto 50px;
+    padding: 30px 20px;
+    border-radius: 10px;
+
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.details-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-container select{
+    width: 60%;
+    height: 35px;
+    border:none;
+    background-color: #F0F5F9;
+    padding: 0px 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    align-self: center;
+}
+
+.details-container select:hover{
+    outline-color: #f04431;
+    outline-style: solid;
+    outline-width: 5px;
+
+    
+}
+
+
+.big-btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #f04431;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.big-btn:hover {
+    background-color: #FFFFFF;
+    color: #f04431;
+    outline-color: #f04431;
+    outline-style: solid;
+    outline-width: 5px;
+}
