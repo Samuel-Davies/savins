@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="{% static 'books/book-info.css'%}">
+</head>
+<body>
+    <div class="header">
+
+        <h1>EMPEROR M.K SUSU</h1>
+
+        <div>
+            <a href="">
+                <h3>Hello, {{user.last_name}}</h3>
+            </a>
+            
+            <a href="{% url 'logout' %}" class="head-btn">Logout</a>
+        
+        </div>
+        
+    </div>
+
+    <div class="balance-display">
+
+        <div class="details-container">
+            <h2>Note!! : The {{books.title}}</h2> <hr>
+            <p>
+                {{books.number_of_pages}} <br />
+                {{books.body}}
+               <h5>{{books.date_acquired}}</h5> 
+            </p>
+           
+        </div>
+        <div class="btn-below">
+            <a href="" class="big-btn">Confirm</a>
+            <span><a href="{% url 'chooseBook'%}" class="big-btn">Cancel</a></span>
+        </div>
+       
+
+    </div>
+</body>
+</html>

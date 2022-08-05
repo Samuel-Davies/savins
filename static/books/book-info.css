@@ -68,6 +68,16 @@ h3 {
     text-transform: uppercase;
 } 
 
+hr{
+    width: 60%;
+}
+
+.details-container p{
+    padding: 30px;
+    text-align: center;
+    margin: 0px;
+}
+
 
 .details-container{
     background-color: #FFFFFF;
@@ -81,29 +91,8 @@ h3 {
 }
 
 
-.details-container ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.details-container ul{
-    width: 60%;
-    height: 35px;
-    border:none;
-    background-color: #F0F5F9;
-    padding: 0px 20px;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    align-self: center;
-}
-
-.details-container ul:hover{
-    outline-color: #f04431;
-    outline-style: solid;
-    outline-width: 5px;
-
-    
+.btn-below span{
+    margin-left: 20px;
 }
 
 
@@ -125,3 +114,6 @@ h3 {
     outline-style: solid;
     outline-width: 5px;
 }
+
+
+

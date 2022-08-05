@@ -14,12 +14,13 @@
         <h1>EMPEROR M.K SUSU</h1>
 
         <div>
-        
-            <a href="">
-                <h3>Hello, </h3>
+        <!-- the link for the surename when clicked should show the user profile page -->
+        <!-- which i will do later after main functionality is working -->
+            <a href=""> 
+                <h3>Hello, {{user.last_name}}</h3>
             </a>
 
-            <a href="" class="head-btn">Logout</a>
+            <a href="{% url 'logout' %}" class="head-btn">Logout</a>
             
         </div>
         
@@ -29,17 +30,15 @@
 
         <div class="details-container">
             <h2>Choose a Book</h2>
-            <!-- write a select option here -->
-            
-            <form action="" method="post">
 
-                {% csrf_token%}
-                <select name="book">
-                    <option>choose a book</option>
-                    <option value="hello">hdsf</option>
-                </select>
-                <input type="submit" value="buy">
-            </form>
+            {% for book in books reversed%}
+            
+            <a style="text-decoration: none; color: black;" href="bookInfo/{{book.id}}">
+                <ul>     
+                    <li>{{book.title}}</li>
+                </ul>
+            </a>
+            {%endfor%}
         </div>
 
     </div>
